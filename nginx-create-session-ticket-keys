@@ -1,11 +1,12 @@
-#!/bin/bash
+#!/bin/sh
 
 set -o errexit -o nounset -o pipefail
 
 umask 077
 
 mkdir -p /etc/nginx/session-ticket-keys
-mount -t ramfs -o mode=700 ramfs /etc/nginx/session-ticket-keys
+chmod 700 /etc/nginx/session-ticket-keys
+mount -t mfs -o rw,nodev,noexec,nosuid,-s=4m /dev/sd0b /etc/nginx/session-ticket-keys
 
 cd /etc/nginx/session-ticket-keys
 

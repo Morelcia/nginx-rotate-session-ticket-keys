@@ -1,0 +1,7 @@
+#!/bin/ksh
+
+daemon="/usr/local/bin/nginx-create-session-ticket-keys"
+
+. /etc/rc.d/rc.subr
+
+rc_cmd $1
