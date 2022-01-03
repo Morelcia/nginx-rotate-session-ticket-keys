@@ -1,2 +1,0 @@
-# Services installed from packages(7) may be started at boot time in the order specified by the pkg_scripts variable from rc.conf(8);
-pkg_scripts=ncstk nginx
