@@ -1,2 +1,2 @@
-PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin/nginx
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
 0	*/8	*	*	*	/usr/local/bin/nginx-rotate-session-ticket-keys
